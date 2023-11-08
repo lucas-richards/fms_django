@@ -20,8 +20,12 @@
       {% for file in files %}
           <tbody>
               <tr>
-              <th>{{file.version}}</th>
-              <td>{{file.title}}</td>
+              <th>{{file.id}}</th>
+              <td><a href="#">
+
+                {{file.title}}
+              </a>
+              </td>
               <td>{{file.document}}</td>
               <td>{{file.last_modified}}</td>
               </tr>

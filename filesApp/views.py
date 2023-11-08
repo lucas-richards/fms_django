@@ -9,3 +9,9 @@ def files_index(request):
     return render(request, 'filesApp/files_index.html', {
         'files': files,
     })
+
+def file_detail(request, name):
+    file = File.objects.get(doc=name)
+    return render(request, 'filesApp/file_detail.html', {
+        'file': file,
+    })
