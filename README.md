@@ -1,4 +1,4 @@
-# Blog App for westridge Laboratories
+# File Management system App for westridge Laboratories
 
 ## Overview
 This application was created for small businesses for following purposes:
