@@ -1,0 +1,35 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<h1>These are the files</h1>
+
+<form class="form-inline m-5">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+  <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">V</th>
+          <th scope="col">Title</th>
+          <th scope="col">Doc</th>
+          <th scope="col">Last Modified</th>
+        </tr>
+      </thead>
+      {% for file in files %}
+          <tbody>
+              <tr>
+              <th>{{file.version}}</th>
+              <td>{{file.title}}</td>
+              <td>{{file.document}}</td>
+              <td>{{file.last_modified}}</td>
+              </tr>
+          </tbody>
+      {% endfor %}
+    
+    
+  </table>
+
+
+{% endblock content %}

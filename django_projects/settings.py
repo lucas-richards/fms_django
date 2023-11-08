@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'filesApp.apps.FilesappConfig',
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     'crispy_forms',
